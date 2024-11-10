@@ -38,15 +38,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  https://www.dunkin.nl/
+  https://www.etos.nl/
   
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
-
+   https://www.etos.nl/trending/
+   Trending
+  <img src="readme-images/trending.png" width="375px" alt="Treding pagina van de etos">
+  
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  https://www.etos.nl/klantenservice/
+   service 
+  <img src="readme-images/service.png" width="375px" alt="Klantenservice pagina van de etos">
  
 </details>
 

@@ -1,31 +1,120 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+/* styles/style.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Pas de grootte van het logo aan */
+    margin-right: 15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: auto; /* Zorgt ervoor dat de menu-items links blijven */
+	flex-direction:column;
+}
+
+.menu img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px; /* Ruimte tussen de iconen */
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
 }
 
 
+/*SEARCH BAR*/
+.search-container {
+	display: flex;
+	background-color:#f2f2f2;
 
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
 }
 
+.search-container div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 8px 15px;
+    width: 400px;
+	flex-grow:1;
+}
 
+.search-container input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    padding: 5px;
+}
 
+.search-container img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    opacity: 0.7;
+}
 
+/*TRENDING*/
+.scrolbar-container ul {
+	display: flex;
+	overflow-x: auto;
+	gap: 1rem;
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
+.scrolbar-container li {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	flex-shrink: 0;
+	width: 6rem;
+	height: 4rem;
+	background-color: #fff;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+}
 
-/* jouw code */
+.scrolbar-container img {
+	max-width: 80%;
+	max-height: 80%;
+	object-fit: contain;
+}
+
+.scrolbar-container li:active {
+    border: 0.2em solid #000; 
+}
 

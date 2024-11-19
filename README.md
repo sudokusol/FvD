@@ -58,9 +58,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  Ik vond het lastig om de screen reader te gebruiken, want ik begreep niet precies hoe je het meost gebruiken.
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  De etos heeft niet te beste screen reader (of het ligt aan mijzelf die niet snapt hoe je een screan reader gebruikt.) 
+  Toen ik het gebruikte bleef hij de slogan van de etos zeggen en vertelde hij niet de tekst op de pagina, dat gebeurde 
+  bij mij tenminsten, misschien dat hij het normaal wel doet.
+  voor de rest is de site wel mooi opgebauwt met code. ze gebruiken heel veel divs.
 
 </details>
 

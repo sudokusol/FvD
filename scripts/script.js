@@ -1,19 +1,15 @@
-console.log(closeButton);
-
 const menuButton = document.querySelector('.menu button');
 const closeButton = document.querySelector('nav button');
 const navMenu = document.querySelector('nav');
 
-// Eventlisteners toevoegen
+// Eventlisteners voor openen en sluiten van het menu
 menuButton.addEventListener('click', toonMenu);
 closeButton.addEventListener('click', sluitMenu);
 
-// Functie om het menu te tonen
 function toonMenu() {
-    navMenu.classList.add('toonMenu'); // Toon het menu
+  navMenu.classList.add("toonMenu");
 }
 
-// Functie om het menu te sluiten
 function sluitMenu() {
-    navMenu.classList.remove('toonMenu'); // Sluit het menu
+  navMenu.classList.remove("toonMenu");
 }

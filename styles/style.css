@@ -1,26 +1,31 @@
 /* styles/style.css */
 body {
     font-family: Arial, sans-serif;
+	margin: 0;
 }
 
 ul {
 	list-style: none;
 }
 
-nav {
+header img {
+	width: 2em;
+}
+
+header {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     padding: 10px 20px;
 }
 
-nav ul {
+header ul {
     display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
 }
 
-nav li {
+header li {
     display: flex;
     align-items: center;
 }
@@ -55,12 +60,33 @@ nav li {
     height: 24px;
 }
 
+/* uitklap navigatie*/
+nav { 
+	display: flex; 
+	flex-direction: column; 
+	background-color: aquamarine; 
+	position: fixed; 
+	top: 0px; 
+	bottom: 0px; 
+	left: 0px; 
+	right: 0px; 
+	transform: translateX(-100%); 
+	transition: 0.3s; 
+} 
+
+nav img {
+	width: 2em;
+}
+
+nav.toonMenu {
+	transform: translateX(0); 
+}
 
 /*SEARCH BAR*/
 .search-container {
 	display: flex;
 	background-color:#f2f2f2;
-
+	padding: .3em;
 }
 
 .search-container div {
@@ -89,11 +115,17 @@ nav li {
     opacity: 0.7;
 }
 
+/*------------------------*/
 /*TRENDING*/
+/*------------------------*/
+
+/* scrolbar*/
 .scrolbar-container ul {
 	display: flex;
 	overflow-x: auto;
 	gap: 1rem;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
 }
 
 .scrolbar-container li {
@@ -105,16 +137,56 @@ nav li {
 	height: 4rem;
 	background-color: #fff;
 	border: 2px solid #ddd;
-	border-radius: 10px;
+	border-radius: 0.7em;
 }
 
 .scrolbar-container img {
 	max-width: 80%;
 	max-height: 80%;
 	object-fit: contain;
+
 }
 
 .scrolbar-container li:active {
-    border: 0.2em solid #000; 
+    border: 0.1em solid #000; 
+}
+
+/* filteren sorteren*/
+.filter-sorteer ul {
+	display: flex;
+	margin-right: 1em;
+	gap: 1em;
+}
+
+.filter-sorteer img {
+	width: 2em;
+	height: 2em;
+}
+.filter-sorteer li {
+	display: flex;
+	align-items: center;
+    border: 0.05em solid #000; 
+	border-radius: 0.7em;
+	width: 50%;
+	height: 1.5em;
+	font-size: 0.8em;
+	padding: 1em;
+}
+
+.filter-sorteer li:nth-of-type(1) {
+	gap:1em;
+}
+
+.filter-sorteer li:nth-of-type(2) {
+	display: flex;
+	justify-content:space-between;
+}
+.filter-sorteer li:hover {
+    border: 0.15em solid #000; 
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
 }
 

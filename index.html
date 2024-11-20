@@ -7,19 +7,42 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-	<nav>
-		<ul>
-			<li><img src="images/etoslogo.png" alt="Etos Logo" class="logo"></li>
-			<li class="menu">
-				<img src="images/navigationbar.png" alt="navigatie bar">
-				<p>Menu</p>
-			</li>
-			<li class="icons">
-				<img src="images/userIcon.png" alt="User Icon">
-				<img src="images/favoriteIcon.svg" alt="Favorite Icon">
-				<img src="images/basketIcon.png" alt="Basket Icon">
-			</li>
-		</ul>
+	<header>
+	  <ul>
+		<!-- Logo -->
+		<li class="logo">
+		  <img src="images/etoslogo.png" alt="Etos Logo">
+		</li>
+  
+		<!-- Menu knop -->
+		<li class="menu">
+		  <button><img src="images/navigationbar.png" alt="Navigatiebalk"></button>
+		  <p>Menu</p>
+		</li>
+  
+		<!-- Iconen -->
+		<li class="icons">
+		  <img src="images/userIcon.png" alt="User Icon">
+		  <img src="images/favoriteIcon.svg" alt="Favorite Icon">
+		  <img src="images/basketIcon.png" alt="Basket Icon">
+		</li>
+	  </ul>
+	</header>
+  
+	<nav class="toonMenu">
+	  <!-- De sluit button -->
+	  <button aria-hidden="true">
+		<img src="images/close.png" alt="Venster sluiten">
+	  </button>
+	  
+	  <ul>
+		<li><a class="active"><img src="https://assets.codepen.io/274456/ft-icon-castle.svg" alt="Home"> Home <img src="images/right-arrow.png" alt="Pijl met verder gaan"></a></li>
+		<li><a href="#"><img src="https://assets.codepen.io/274456/ft-icon-knight.svg" alt="Knight"> Knight <img src="images/right-arrow.png" alt="Pijl met verder gaan"></a></li>
+		<li><a href="#"><img src="https://assets.codepen.io/274456/ft-icon-ogre.svg" alt="Ogre"> Ogre <img src="images/right-arrow.png" alt="Pijl met verder gaan"></a></li>
+		<li><a href="#"><img src="https://assets.codepen.io/274456/ft-icon-queen.svg" alt="Queen"> Queen <img src="images/right-arrow.png" alt="Pijl met verder gaan"></a></li>
+		<li><a href="#"><img src="https://assets.codepen.io/274456/ft-icon-witch.svg" alt="Witch"> Witch <img src="images/right-arrow.png" alt="Pijl met verder gaan"></a></li>
+		<li><a href="#"><img src="https://assets.codepen.io/274456/ft-icon-wizard.svg" alt="Wizard"> Wizard <img src="images/right-arrow.png" alt="Pijl met verder gaan"></a></li>
+	  </ul>
 	</nav>
 
 	<section class="search-container">
@@ -43,5 +66,19 @@
 			<li><img src="images/vaseline.png" alt="Vaseline"></li>
 		</ul>
 	</section>
+
+	<section class="filter-sorteer">
+		<ul>
+			<li>
+				<img src="images/filter.png" alt="Filter menu">
+				<h2>Filteren</h2>
+			</li>
+			<li>
+				<h2>Sorteer</h2>
+				<img src="images/dropdown.png" alt="Drop down menu">
+			</li>
+		</ul>
+	</section>
+	<p>76 resultaten</p>
 </body>
 </html>
